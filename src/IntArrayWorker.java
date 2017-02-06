@@ -1,4 +1,5 @@
 public class IntArrayWorker {
+	private static final String Matrix = null;
 	/** two dimensional matrix */
 	private int[][] matrix = null;
 
@@ -28,10 +29,25 @@ public class IntArrayWorker {
 	}
 
 	/**
-	 * Method to return the total using a nested for-each loop
+	 * Count how many times an intiger is found in the matrix
 	 * 
-	 * @return the total of the values in the array
+	 * @return the count 
 	 */
+	  public int getCount(int n) {
+		  int count = 0;
+		  
+		 for (int[] row : Matrix){
+			 for (int i : row) {
+				 if (i == n) {
+					 count++;
+					 System.out.println(count);
+				 }
+			 }
+		 }
+		 return count
+	 }
+	  
+	 /*
 	public int getTotalNested() {
 		int total = 0;
 		for (int[] rowArray : matrix) {
