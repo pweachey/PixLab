@@ -86,6 +86,9 @@ public class IntArrayWorker {
 		}
 	}
 	
+	
+	//Exercise 1
+	//Write a getCount method in the IntArrayWorker class that returns the count of the number of times a passed integer value is found in the matrix
 	 public int getCount(int number)
 	  {
 	      int count = 0;
@@ -103,6 +106,9 @@ public class IntArrayWorker {
 	      return count;
 	  }
 	 
+	 
+	 //Exercise 2
+	 //Write a getLargest method in the IntArrayWorker class that returns the largest value in the matrix.
 	  public int getLargest()
 	  {
 	      int largest = Integer.max(1, 6);
@@ -121,6 +127,8 @@ public class IntArrayWorker {
 	      return largest;
 	  }
 	  
+	  //Exercise 3
+	  //Write a getColTotal method in the IntArrayWorker class that returns the total of all integers in a specified column.
 	  public int getColTotal(int col)
 	  {
 		  int total = 0;
