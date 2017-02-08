@@ -1,2 +1,4 @@
 ##Activity4
-Exersizes 1.2.3.4 done commited to .java files
+###Exercise 1 Complete
+###Exercise 2 Complete
+###Exercise 3 Complete
