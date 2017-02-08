@@ -105,7 +105,7 @@ public class IntArrayWorker {
 	 
 	  public int getLargest()
 	  {
-	      int largest = Integer.MIN_VALUE;
+	      int largest = Integer.max(1, 6);
 	      
 	      for (int[] row : matrix)
 	      {
@@ -119,6 +119,19 @@ public class IntArrayWorker {
 	      }
 	      
 	      return largest;
+	  }
+	  
+	  public int getColTotal(int col)
+	  {
+		  int total = 0;
+		  
+		  for (int[] row : matrix)
+		  {
+			  total += row[col];
+		  }
+		  
+		  return total;
+			  
 	  }
 
 }
