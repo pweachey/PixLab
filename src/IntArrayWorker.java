@@ -6,8 +6,7 @@ public class IntArrayWorker {
 	/**
 	 * set the matrix to the passed one
 	 * 
-	 * @param theMatrix
-	 *            the one to use
+	 * @param theMatrix the one to use
 	 */
 	public void setMatrix(int[][] theMatrix) {
 		matrix = theMatrix;
@@ -33,21 +32,7 @@ public class IntArrayWorker {
 	 * 
 	 * @return the count 
 	 */
-	  public int getCount(int n) {
-		  int count = 0;
-		  
-		 for (int[] row : Matrix){
-			 for (int i : row) {
-				 if (i == n) {
-					 count++;
-					 System.out.println(count);
-				 }
-			 }
-		 }
-		 return count
-	 }
-	  
-	 /*
+	 
 	public int getTotalNested() {
 		int total = 0;
 		for (int[] rowArray : matrix) {
@@ -100,5 +85,40 @@ public class IntArrayWorker {
 			}
 		}
 	}
+	
+	 public int getCount(int number)
+	  {
+	      int count = 0;
+	      for (int[] rowArray : matrix)
+	      {
+	          for (int i : rowArray)
+	          {
+	              if (i == number)
+	              {
+	                  count++;
+	              }
+	          }
+	      }
+	      
+	      return count;
+	  }
+	 
+	  public int getLargest()
+	  {
+	      int largest = Integer.MIN_VALUE;
+	      
+	      for (int[] row : matrix)
+	      {
+	          for (int i : row)
+	          {
+	              if (i > largest)
+	              {
+	                  largest = i;
+	              }
+	          }
+	      }
+	      
+	      return largest;
+	  }
 
 }
