@@ -19,35 +19,35 @@ public class PictureTester
   
   public static void testKeepOnlyBlue()
   {
-	  Picture beach = new Picture("beach.jpg");
-	  beach.explore();
-	  beach.KeepOnlyBlue();
-	  beach.explore();
+	Picture beach = new Picture("beach.jpg");
+	beach.explore();
+	beach.KeepOnlyBlue();
+        beach.explore();
   }
   public static void testNegate()
   {
-	  Picture beach = new Picture("beach.jpg");
-	  beach.explore();
-	  beach.negate();
-	  beach.explore();
+	Picture beach = new Picture("beach.jpg");
+	beach.explore();
+	beach.negate();
+	beach.explore();
 	  
   }
   
   public static void testGrayscale()
   {
-	  Picture beach = new Picture("beach.jpg");
-	  beach.explore();
-	  beach.grayscale();
-	  beach.explore();
+	Picture beach = new Picture("beach.jpg");
+	beach.explore();
+	beach.grayscale();
+	beach.explore();
   }
   
   public static void testFixUnderwater()
   {
-	  Picture fishes = new Picture("water.jpg");
-	  fishes.explore();
-	  fishes.fixUnderwater();
-	  System.out.println("Fixed underwater");
-	  fishes.explore();
+	Picture fishes = new Picture("water.jpg");
+	fishes.explore();
+	fishes.fixUnderwater();
+	System.out.println("Fixed underwater");
+	fishes.explore();
   }
   
   /** Method to test mirrorVertical */
